@@ -1,18 +1,17 @@
-# Aksjeanalyse – Streamlit-app
 
-Denne appen viser sannsynlighet for at en aksje stiger (basert på en enkel logistisk regresjon),
-modellens treffsikkerhet, anbefaling (KJØP/HOLD/SELG), og grafer.
+# Aksjeanalyse – Pro v5
 
-## Kjør lokalt
-```bash
-pip install -r requirements.txt
-streamlit run aksje_prediksjon_app.py
-```
+Nyheter i v5:
+- **Lagre til historikk**-knapper (Top_Up og Top_Down) med dato og gruppenavn
+- **Egendefinerte lister**: lag, lagre i økten, og last inn/merge med presets
+- Flere presets: DAX40, CAC40, FTSE100, OMX30 + alle fra v4
+- Beholder rangeringer (Top, Bottom, Composite), indikatorvalg, Excel/CSV-eksport
 
-## Publiser gratis på Streamlit Cloud
-1. Last opp denne mappen til et GitHub-repo
-2. Gå til https://streamlit.io/cloud → New app
-3. Velg repoet → `main` branch → main file: `aksje_prediksjon_app.py`
-4. Deploy
+## Bruk
+1) Velg preset(er) og/eller lag dine **egne lister** i sidepanelet
+2) Trykk **Skann og ranger** – se Top/Bottom/Composite
+3) Trykk **Lagre til historikk** for å logge dagens topp/bunn
+4) Last ned historikken som CSV
 
-Ferdig URL kan åpnes på mobil og PC.
+## Streamlit Cloud
+Main file: `app_v5.py`
